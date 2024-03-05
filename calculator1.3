@@ -1,0 +1,27 @@
+def add(x, y):
+    """Function to add two numbers"""
+    return x + y
+
+def subtract(x, y):
+    """Function to subtract two numbers"""
+    return x - y
+
+def multiply(x, y):
+    """Function to multiply two numbers"""
+    return x * y
+
+def main():
+    print("Welcome to Simple Calculator (Addition, Subtraction, and Multiplication)")
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
+
+    add_result = add(num1, num2)
+    sub_result = subtract(num1, num2)
+    mul_result = multiply(num1, num2)
+
+    print("The result of adding", num1, "and", num2, "is:", add_result)
+    print("The result of subtracting", num1, "from", num2, "is:", sub_result)
+    print("The result of multiplying", num1, "and", num2, "is:", mul_result)
+
+if __name__ == "__main__":
+    main()
